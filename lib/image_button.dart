@@ -61,25 +61,25 @@ class _MyAppState extends State<MyApp> {
 
 
 
-          Container(
-            // padding: EdgeInsets.all(50),
-            alignment: Alignment.center,
-            child: IconButton(
-              icon: Image.asset('assets/icon/google.png'),
-              iconSize: 50,
-              color: Colors.green,
-              splashColor: Colors.purple,
-              onPressed: () async {
-                await widget.browser.open(
-                    url: Uri.parse("https://google.com"),
-                    options: ChromeSafariBrowserClassOptions(
-                        android: AndroidChromeCustomTabsOptions(
-                          addDefaultShareMenuItem: false,),
-                        ios: IOSSafariOptions(barCollapsingEnabled: true)));
-              },
-            ),
-          ),
-
+         
+           Container(
+                  // padding: EdgeInsets.all(50),
+                  alignment: Alignment.center,
+                  child: IconButton(
+                    icon: Image.asset('assets/icon/Amazon_icon.png'),
+                    iconSize: 50,
+                    color: Colors.green,
+                    splashColor: Colors.purple,
+                    onPressed: () async {
+                      await widget.browser.open(
+                          url: Uri.parse("https://www.amazon.in/?&_encoding=UTF8&tag=bappasaikh-21&linkCode=ur2&linkId=e3b009b026920c3cfdd6185fadfb7e67&camp=3638&creative=24630"),
+                          options: ChromeSafariBrowserClassOptions(
+                              android: AndroidChromeCustomTabsOptions(
+                                addDefaultShareMenuItem: false,),
+                              ios: IOSSafariOptions(barCollapsingEnabled: true)));
+                    },
+                  ),
+                ),
 
 
 
